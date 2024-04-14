@@ -125,3 +125,10 @@ h1, h2, h3 {
 header,footer{
   padding: 0 calc(50% - 750px);
 }
+button{
+  position: relative;
+  transition: all 0.4s;
+}
+button:active{
+  bottom: -2px;
+}
