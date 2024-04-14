@@ -14,6 +14,6 @@ const app=createApp(App)
     })
 
     app
-        .component("v-icon", OhVueIcon)
+        .use(store)
         .use(router)
         .mount('#app')
