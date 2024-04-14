@@ -8,6 +8,11 @@ import {MdCatchingpokemon} from "oh-vue-icons/icons";
 addIcons(MdCatchingpokemon);
 
 const app=createApp(App)
+
+    uiComponents.forEach(component=>{
+        app.component(component.name,component)
+    })
+
     app
         .component("v-icon", OhVueIcon)
         .use(router)
